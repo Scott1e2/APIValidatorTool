@@ -1,0 +1,32 @@
+{
+    "api_endpoints": [
+        "https://api.example.com/v1/users",
+        "https://api.example.com/v1/orders"
+    ],
+    "authentication": {
+        "token_type": "Bearer",
+        "access_token": "your_access_token_here",
+        "mfa_check": true
+    },
+    "security_checks": {
+        "auth_validation": true,
+        "rate_limiting_check": true,
+        "sensitive_data_check": true,
+        "endpoint_enumeration": true,
+        "bola_check": true
+    },
+    "red_team_options": {
+        "token_manipulation": true,
+        "replay_attack_simulation": true,
+        "privilege_escalation": true
+    },
+    "alert_thresholds": {
+        "unauthorized_access": true,
+        "sensitive_data_exposure": true,
+        "rate_limit_violation": true
+    },
+    "baseline_tracking": {
+        "enable_baseline_tracking": true,
+        "report_history_limit": 10
+    }
+}
